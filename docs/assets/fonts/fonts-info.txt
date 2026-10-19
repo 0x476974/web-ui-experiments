@@ -1,0 +1,3 @@
+bootstrap-icons.woff  1.13.2
+bootstrap-icons.woff2 1.13.2
+NotoSans-Regular.ttf  Unknown
