@@ -1,0 +1,12 @@
+.gy-button-content {
+    display: flex;
+    gap: 2px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+gy-button {
+    display: inline-block;
+}

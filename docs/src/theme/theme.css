@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../../assets/fonts/NotoSans-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'bootstrap-icons';
+    src: url('../../assets/fonts/bootstrap-icons.woff2') format('woff2'),
+    url('../../assets/fonts/bootstrap-icons.woff') format('woff');
+    font-display: block;
+}
+:root {
+    --fc: #222222; /* Foreground */
+    --bc: #ffffff; /* Background */
+    --pfc: #ffffff; /* Primary */
+    --pbc: #012060;
+    --sfc: #000000; /* Secondary */
+    --sbc: #ffc000;
+    --dfc: #555555; /* Disabled */
+    --dbc: #aaaaaa;
+
+    --tf: 14px 'Noto Sans'; /* Text Font */
+    --if: 14px 'bootstrap-icons'; /* Icon Font */
+}
+* {
+    all: unset;
+    display: none;
+}
+html, body {
+    display: block;
+}
+div {
+    display: block;
+}
+span {
+    display: inline;
+}
+
+.icon{
+    font: var(--if);
+}
