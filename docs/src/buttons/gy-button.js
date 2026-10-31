@@ -18,6 +18,7 @@ class  GyButton extends HTMLElement {
         this.textSpan.style.display = 'none';
     }
     connectedCallback() {
+        this.tabIndex = 0;
         this.mainDiv.appendChild(this.iconSpan);
         this.mainDiv.appendChild(this.textSpan);
         this.appendChild(this.mainDiv);
