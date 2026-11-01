@@ -3,9 +3,11 @@ class  GyButton extends HTMLElement {
     #iconSpan;
     #textSpan;
 
+    static formAssociated = true;
     static get observedAttributes() {
         return ['icon', 'text', 'position', 'gap', 'size'];
     }
+
     constructor() {
         super();
         this.mainDiv = document.createElement('div');

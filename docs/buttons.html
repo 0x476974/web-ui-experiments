@@ -17,7 +17,7 @@
     <script src="src/buttons/gy-button.js" type="text/javascript"></script>
 
     <style>
-        .stack-panel{
+        .stack-panel {
             display: flex;
             flex-direction: row;
             gap: 10px;
@@ -29,10 +29,44 @@
 </head>
 <body>
 <div class="stack-panel">
-    <gy-button icon="F17A" text="Hello"></gy-button>
-    <gy-button text="Hello"></gy-button>
-    <gy-button icon="F17A" gap="10px" text="cool"></gy-button>
-    <gy-button icon="F170" text="Hello" position="column" gap="10px" size="50px"></gy-button>
+    <p>Button: No Style</p>
+    <gy-button icon="F3ED"></gy-button>
+    <gy-button text="Github"></gy-button>
+    <gy-button icon="F3ED" text="Github" gap="5px"></gy-button>
+    <gy-button icon="F647" text="Mastodon" gap="5px" position="row"></gy-button>
+    <gy-button icon="F647" text="Mastodon" gap="5px" position="row-reverse"></gy-button>
+    <gy-button icon="F647" text="Mastodon" gap="5px" position="column" size="2em"></gy-button>
+    <gy-button icon="F647" text="Mastodon" gap="5px" position="column-reverse" size="2em"></gy-button>
+</div>
+<div class="stack-panel">
+    <p>Button: Primary</p>
+    <gy-button class="primary" icon="F3ED"></gy-button>
+    <gy-button class="primary" text="Github"></gy-button>
+    <gy-button class="primary" icon="F3ED" text="Github" gap="5px"></gy-button>
+    <gy-button class="primary" icon="F647" text="Mastodon" gap="5px" position="row"></gy-button>
+    <gy-button class="primary" icon="F647" text="Mastodon" gap="5px" position="row-reverse"></gy-button>
+    <gy-button class="primary" icon="F647" text="Mastodon" gap="5px" position="column" size="2em"></gy-button>
+    <gy-button class="primary" icon="F647" text="Mastodon" gap="5px" position="column-reverse" size="2em"></gy-button>
+</div>
+<div class="stack-panel">
+    <p>Button: Secondary</p>
+    <gy-button class="secondary" icon="F3ED"></gy-button>
+    <gy-button class="secondary" text="Github"></gy-button>
+    <gy-button class="secondary" icon="F3ED" text="Github" gap="5px"></gy-button>
+    <gy-button class="secondary" icon="F647" text="Mastodon" gap="5px" position="row"></gy-button>
+    <gy-button class="secondary" icon="F647" text="Mastodon" gap="5px" position="row-reverse"></gy-button>
+    <gy-button class="secondary" icon="F647" text="Mastodon" gap="5px" position="column" size="2em"></gy-button>
+    <gy-button class="secondary" icon="F647" text="Mastodon" gap="5px" position="column-reverse" size="2em"></gy-button>
+</div>
+<div class="stack-panel">
+    <p>Button: Disabled</p>
+    <gy-button disabled icon="F3ED"></gy-button>
+    <gy-button disabled text="Github"></gy-button>
+    <gy-button disabled icon="F3ED" text="Github" gap="5px"></gy-button>
+    <gy-button disabled icon="F647" text="Mastodon" gap="5px" position="row"></gy-button>
+    <gy-button disabled icon="F647" text="Mastodon" gap="5px" position="row-reverse"></gy-button>
+    <gy-button disabled icon="F647" text="Mastodon" gap="5px" position="column" size="2em"></gy-button>
+    <gy-button disabled icon="F647" text="Mastodon" gap="5px" position="column-reverse" size="2em"></gy-button>
 </div>
 </body>
 </html>

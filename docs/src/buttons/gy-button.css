@@ -8,5 +8,34 @@
     width: 100%;
 }
 gy-button {
+    color: var(--def-fg);
+    background: var(--def-bg);
+    border-radius: var(--rad);
+    padding: var(--pad);
     display: inline-block;
+    box-sizing: border-box;
+    cursor: default;
+    user-select: none;
+}
+gy-button:not(:disabled):hover {
+    box-shadow: var(--bsw);
+}
+gy-button:not(:disabled):active {
+    box-shadow: none;
+    filter: brightness(80%);
+}
+gy-button:focus {
+    outline: var(--otl);
+}
+gy-button:disabled {
+    color: var(--dis-fg);
+    background: var(--dis-bg);
+}
+.primary {
+    color: var(--pm-fg);
+    background: var(--pm-bg);
+}
+.secondary {
+    color: var(--sec-fg);
+    background: var(--sec-bg);
 }

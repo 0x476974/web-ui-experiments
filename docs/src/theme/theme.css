@@ -10,14 +10,22 @@
     font-display: block;
 }
 :root {
-    --fc: #222222; /* Foreground */
-    --bc: #ffffff; /* Background */
-    --pfc: #ffffff; /* Primary */
-    --pbc: #012060;
-    --sfc: #000000; /* Secondary */
-    --sbc: #ffc000;
-    --dfc: #555555; /* Disabled */
-    --dbc: #aaaaaa;
+    /* foreground (fg), background (bg) */
+    --pg-fg: #222222; /* page */
+    --pg-bg: #ffffff;
+    --def-fg: #ffffff; /* default */
+    --def-bg: #222222;
+    --pm-fg: #ffffff; /* primary */
+    --pm-bg: #012060;
+    --sec-fg: #000000; /* secondary */
+    --sec-bg: #ffc000;
+    --dis-fg: #555555; /* disabled */
+    --dis-bg: #aaaaaa;
+
+    --bsw: 0 0 5px 1px #777777; /* Box Shadow */
+    --otl: 2px solid #2266dd; /* Outline */
+    --pad: 5px 7px; /* Padding */
+    --rad: 0.2em; /* Radius */
 
     --tf: 14px 'Noto Sans'; /* Text Font */
     --if: 14px 'bootstrap-icons'; /* Icon Font */
@@ -25,8 +33,11 @@
 * {
     all: unset;
     display: none;
+    font: var(--tf);
 }
 html, body {
+    color: var(--pg-fg);
+    background: var(--pg-bg);
     display: block;
 }
 div {
@@ -35,7 +46,6 @@ div {
 span {
     display: inline;
 }
-
 .icon{
     font: var(--if);
 }
