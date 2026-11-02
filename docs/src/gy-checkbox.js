@@ -24,6 +24,7 @@ class GyCheckbox extends HTMLElement {
         }
         else if (name === 'state') {
             this.updateFormValue();
+            this.onChange();
         }
     }
     onClick = () => {
@@ -31,6 +32,14 @@ class GyCheckbox extends HTMLElement {
         state = state === 'checked' ? 'unchecked' : 'checked';
         this.setAttribute('state', state);
     };
+    onChange() {
+        const changeEvent = new CustomEvent('change', {
+            detail: {
+                state: this.getAttribute('state')
+            }
+        });
+        this.dispatchEvent(changeEvent);
+    }
     updateFormValue() {
         let state = this.getAttribute('state');
         let value = this.getAttribute('value');

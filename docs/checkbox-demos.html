@@ -26,12 +26,17 @@
             margin: 10px auto;
         }
     </style>
+    <script>
+        function update(e) {
+            console.log("-> " + e.detail.state);
+        }
+    </script>
 </head>
 <body>
 <div class="stack-panel">
     <p>Checkbox: No Style</p>
     <gy-checkbox text="Are you developer?" value="yes"></gy-checkbox>
-    <gy-checkbox text="Want updates??" state="checked" value="true"></gy-checkbox>
+    <gy-checkbox text="Want updates??" state="checked" value="true" onchange="update(event)"></gy-checkbox>
 </div>
 <div class="stack-panel">
     <p>Checkbox: Primary</p>
