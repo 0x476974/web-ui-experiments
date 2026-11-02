@@ -1,8 +1,4 @@
 class  GyButton extends HTMLElement {
-    #mainDiv;
-    #iconSpan;
-    #textSpan;
-
     static formAssociated = true;
     static get observedAttributes() {
         return ['icon', 'text', 'position', 'gap', 'size'];

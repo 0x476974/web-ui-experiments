@@ -14,7 +14,6 @@ gy-button {
     padding: var(--pad);
     display: inline-block;
     box-sizing: border-box;
-    cursor: default;
     user-select: none;
 }
 gy-button:not(:disabled):hover {
