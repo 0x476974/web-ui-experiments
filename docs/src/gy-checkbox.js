@@ -35,7 +35,8 @@ class GyCheckbox extends HTMLElement {
     onChange() {
         const changeEvent = new CustomEvent('change', {
             detail: {
-                state: this.getAttribute('state')
+                state: this.getAttribute('state'),
+                value: this.getAttribute('value')
             }
         });
         this.dispatchEvent(changeEvent);
