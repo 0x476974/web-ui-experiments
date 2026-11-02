@@ -1,0 +1,46 @@
+gy-radio {
+    --gyr-c: var(--def-bg);
+    color: var(--def-bg);
+    border-radius: var(--rad);
+    padding: var(--pad);
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    user-select: none;
+}
+gy-radio:not(:disabled):hover::before {
+    background: alpha(from var(--gyr-c) / 10%);
+}
+gy-radio:not(:disabled):active::before {
+    background: alpha(from var(--gyr-c) / 20%);
+}
+gy-radio:focus-visible {
+    outline: var(--otl);
+}
+gy-radio:disabled {
+    color: var(--dis-fg);
+}
+gy-radio:disabled::before {
+    color: var(--dis-fg);
+    background: var(--dis-bg);
+}
+gy-radio::before {
+    content: '\F28A';
+    font: var(--if);
+    margin: -0.15em 0.5em 0 0;
+    border-radius: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+gy-radio[state="checked"]::before {
+    content: '\F517';
+}
+.primary {
+    --gyr-c: var(--pm-bg);
+    color: var(--pm-bg);
+}
+.secondary {
+    --gyr-c: var(--sec-bg);
+    color: var(--sec-bg);
+}
