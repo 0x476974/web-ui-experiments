@@ -14,7 +14,7 @@ gy-checkbox:not(:disabled):hover::before {
 gy-checkbox:not(:disabled):active::before {
     background: alpha(from var(--gycb-c) / 20%);
 }
-gy-checkbox:focus {
+gy-checkbox:focus-visible {
     outline: var(--otl);
 }
 gy-checkbox:disabled {

@@ -23,7 +23,7 @@ gy-button:not(:disabled):active {
     box-shadow: none;
     filter: brightness(80%);
 }
-gy-button:focus {
+gy-button:focus-visible {
     outline: var(--otl);
 }
 gy-button:disabled {
